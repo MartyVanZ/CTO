@@ -56,3 +56,7 @@ Try all three company stages and all four concerns, including Start again, Chang
 - **Recommendation explanations:** `rationales` in `public/app.js`
 - **Contact email:** `mailto:` in `public/index.html` and `public/app.js`
 - **Appearance:** `public/styles.css`
+
+## Meeting scheduler
+
+The results-page call to action opens the Zoom Scheduler at https://scheduler.zoom.us/marty-vanzwietering/marty-techcxo-intro in a new browser tab. No email draft is generated.

@@ -73,9 +73,7 @@ function showResults(){
     const why=document.createElement('div');why.className='rec-why';why.textContent=rationales[id];
     card.append(no,title,text,why);container.append(card);
   });
-  const subject=encodeURIComponent('Technology assessment follow-up');
-  const body=encodeURIComponent(`Hi Marty,\n\nI completed the technology check-in.\n\nCompany stage: ${stageNames[stage]}\nTop priority: ${concernNames[concern]}\nRecommendations: ${matches[stage][concern].map(id=>serviceDetails[id].title).join(', ')}\n\nI'd like to discuss these recommendations.\n`);
-  $('contact-link').href=`mailto:marten.vanzwietering@techcxo.com?subject=${subject}&body=${body}`;
+  $('contact-link').href='https://scheduler.zoom.us/marty-vanzwietering/marty-techcxo-intro';
   document.querySelector('.panel').scrollIntoView({behavior:'smooth',block:'start'});
 }
 document.querySelectorAll('[data-stage]').forEach(b=>b.addEventListener('click',()=>chooseStage(b.dataset.stage)));
